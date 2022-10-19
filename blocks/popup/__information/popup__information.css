@@ -1,0 +1,12 @@
+.popup__information {
+  width: 320px;
+  margin-top: 20px;
+  margin-left: 36px;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__information {
+    width: 238px;
+    margin-left: 22px;
+  }
+}

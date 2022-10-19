@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>mesto</title>
+</head>
+<body class="root">
+  <main class="content">
+    <div id="editButton" class="popup popup_edit popup_opened">
+      <form class="popup__container popup__container_edit" name="profile-form">
+        <h2 class="popup__title">Купить билет</h2>
+        <div class="popup__input">
+          <label for="route" class="popup__label">Выберите направление</label>
+          <select name="route" id="route" class="popup__field">
+            <option value="из A в B">из A в B</option>
+            <option value="из B в A">из B в A</option>
+            <option value="из A в B и обратно в А">из A в B и обратно в А</option>
+          </select>
+        </div>
+        <div class="popup__input">
+          <label for="time" class="popup__label">Выберите время</label>
+          <select name="time1" id="time1" class="popup__field">
+            <option value="18:00(из A в B)">18:00(из A в B)</option>
+            <option value="18:30(из A в B)">18:30(из A в B)</option>
+            <option value="18:45(из A в B)">18:45(из A в B)</option>
+            <option value="19:00(из A в B)">19:00(из A в B)</option>
+            <option value="19:15(из A в B)">19:15(из A в B)</option>
+            <option value="21:00(из A в B)">21:00(из A в B)</option>
+            <option value="18:30(из B в A)">18:30(из B в A)</option>
+            <option value="18:45(из B в A)">18:45(из B в A)</option>
+            <option value="19:00(из B в A)">19:00(из B в A)</option>
+            <option value="19:15(из B в A)">19:15(из B в A)</option>
+            <option value="19:35(из B в A)">19:35(из B в A)</option>
+            <option value="21:50(из B в A)">21:50(из B в A)</option>
+            <option value="21:55(из B в A)">21:55(из B в A)</option>
+          </select>
+          <select name="time2" id="time2" class="popup__field popup__field_back popup__field_back_hidden">
+            <option value="19:00(из B в A)">19:00(из B в A)</option>
+            <option value="19:15(из B в A)">19:15(из B в A)</option>
+            <option value="19:35(из B в A)">19:35(из B в A)</option>
+            <option value="21:50(из B в A)">21:50(из B в A)</option>
+            <option value="21:55(из B в A)">21:55(из B в A)</option>
+          </select>
+        </div>
+        <div class="popup__input">
+          <label for="num" class="popup__label">Количество билетов</label>
+          <input id="num" name="num" type="number" class="popup__field">
+        </div>
+        <div class="popup__information popup__information_hidden">
+          <p class="popup__result">Вы выбрали 4 билета по маршруту из A в B стоимостью 4000р.</p>
+          <p class="popup__result">Это путешествие займет у вас 50 минут.</p>
+          <p class="popup__result">Теплоход отправляется в 12-00, а прибудет в 18-00.</p>
+        </div>
+        <button class="popup__submitButton popup__submitButton_inactive" type="submit" disabled>Посчитать</button>
+      </form>
+    </div>
+  </main>
+  <script src="./pages/index.js"></script>
+</body>
+</html>

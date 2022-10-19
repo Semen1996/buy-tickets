@@ -1,0 +1,15 @@
+.popup__label {
+  margin: 0;
+  margin-left: 36px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__label {
+    line-height: 22px;
+    margin-left: 22px;
+  }
+}
